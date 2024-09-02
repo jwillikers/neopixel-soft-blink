@@ -1,5 +1,5 @@
-#![no_std]
 #![no_main]
+#![no_std]
 
 use bsp::entry;
 use defmt::*;
@@ -8,7 +8,6 @@ use defmt_rtt as _;
 use embedded_hal::spi::MODE_0;
 use panic_probe as _;
 use fugit::RateExtU32;
-// use fugit::MillisDurationU32;
 use fugit::MicrosDurationU32;
 use rp_pico as bsp;
 use bsp::hal::{

@@ -128,7 +128,7 @@ sudo dnf -y install libusbx-devel systemd-devel
 cargo install cargo-embed
 ----
 
-. Install the required Udev rules.
+. Install the required udev rules.
 +
 [,sh]
 ----
@@ -205,7 +205,7 @@ Licensed under either of
 
 at your option.
 
-© 2021 Jordan Williams
+© 2021-2024 Jordan Williams
 
 == Authors
 
