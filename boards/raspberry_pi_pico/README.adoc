@@ -126,7 +126,7 @@ To use the `picoprobe` to flash and debug the examples, follow these instruction
 +
 [,sh]
 ----
-wget -LP /run/media/$USER/RPI-RP2/ https://github.com/majbthrd/DapperMime/releases/download/20210225/raspberry_pi_pico-DapperMime.uf2
+wget --relative --directory-prefix=/run/media/$USER/RPI-RP2/ https://github.com/majbthrd/DapperMime/releases/download/20210225/raspberry_pi_pico-DapperMime.uf2
 ----
 
 . Wire the two Picos together according to the instructions https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf#%5B%7B%22num%22%3A60%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C115%2C841.89%2Cnull%5D[here].
@@ -178,9 +178,8 @@ Licensed under either of
 
 at your option.
 
-© 2021-2023 Jordan Williams
+© 2021-2024 Jordan Williams
 
 == Authors
 
 mailto:{email}[{author}]
-
