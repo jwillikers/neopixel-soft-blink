@@ -6,7 +6,7 @@ use defmt::*;
 use defmt::debug_assert_ne;
 use defmt_rtt as _;
 use embedded_hal::spi::MODE_0;
-use embedded_hal::adc::OneShot;
+use embedded_hal_0_2::adc::OneShot;
 use fugit::RateExtU32;
 use panic_probe as _;
 use rp_pico as bsp;
@@ -126,7 +126,7 @@ fn main() -> ! {
     let blank_data = [blank_rgbw; NUM_LEDS];
 
     let mut adc = Adc::new(pac.ADC, &mut pac.RESETS);
-    let mut adc_pin_2 = AdcPin::new(pins.gpio28.into_floating_input());
+    let mut adc_pin_2 = AdcPin::new(pins.gpio28.into_floating_input()).unwrap();
     let mut ma: MovAvg<u16, u32, 200> = MovAvg::new();
 
     loop {
